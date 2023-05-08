@@ -1,0 +1,21 @@
+#Palindromic Number
+class Solution {
+public:
+    bool isPalindrome(int x) {
+        int c=x;
+        long long sum= 0;
+        while (x>0){
+            sum = (sum*10)+(x%10);
+            x=x/10;
+        }
+        if(c==sum){
+            return true;
+        
+        }
+        else{
+            return false;
+        }
+			
+        
+    }
+};
