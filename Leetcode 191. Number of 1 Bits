@@ -1,0 +1,18 @@
+//Number of 1 Bits
+class Solution {
+public:
+    int hammingWeight(uint32_t n) {
+        int count=0;
+        while(n!=0){
+            //checking if last bit is one or not
+            if(n&1){
+                count= count+1;
+            }
+            // right shifting n
+            n=n>>1;
+
+        }
+        return count;
+        
+    }
+};
