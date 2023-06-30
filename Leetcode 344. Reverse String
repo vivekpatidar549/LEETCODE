@@ -1,0 +1,20 @@
+class Solution {
+public:
+    int getlength(vector<char> s){
+        int count=0;
+        int i=0;
+        while(s[i]!='\0'){
+            count++;
+            i++;
+        }
+        return count;
+    }
+    void reverseString(vector<char>& s) {
+        int start=0;
+        int end=getlength(s);
+        while(start<end){
+            swap(s[start++], s[end--]);
+        }
+        
+    }
+};
