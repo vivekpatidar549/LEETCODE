@@ -1,0 +1,33 @@
+class Solution {
+public:
+ListNode* findloop(ListNode*head){
+        if(head ==NULL) return NULL;
+        ListNode *slow=head;
+        ListNode * fast=head;
+        bool check=1;
+        while(slow!=NULL && fast!=NULL){
+            fast=fast->next;
+            if(fast!=NULL){
+                fast=fast->next;
+            }
+            slow=slow->next;
+            if(slow==fast){
+                return slow;
+            }
+        }
+        return NULL;
+    }
+
+    ListNode *detectCycle(ListNode *head) {
+        if(findloop(head)==NULL) return NULL;
+        ListNode* intersectionpoint = findloop(head);
+        ListNode*slow=head;
+        
+        while(slow!=intersectionpoint){
+            slow=slow->next;
+            intersectionpoint=intersectionpoint->next;
+        }
+        return slow;
+        
+    }
+};
