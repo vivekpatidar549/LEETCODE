@@ -1,5 +1,5 @@
 # LEETCODE
-Here i will be uploading all questions that i have solved on leetcode :-
+**Collection of GFG problems that I am solving every day to be a consistent learner.**
 
 <p style="white-space: nowrap;" align="center">
     <a align="center" href="https://www.leetcode.com/vivekpatidar549" target="blank"; margin-right: 30px;">
