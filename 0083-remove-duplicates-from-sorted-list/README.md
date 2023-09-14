@@ -8,7 +8,7 @@
 <strong>Output:</strong> [1,2]
 </pre>
 
-<p><strong class="example">Example 2:</strong></p>
+<p><strong class="exampl">Example 2:</strong></p>
 <img alt="" src="https://assets.leetcode.com/uploads/2021/01/04/list2.jpg" style="width: 542px; height: 222px;" />
 <pre>
 <strong>Input:</strong> head = [1,1,2,3,3]
